@@ -1,6 +1,6 @@
-# Casper
+# Recognized.io Ghost Theme
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
+Forked from the default casper theme. The default theme for [Ghost](http://github.com/tryghost/ghost/).
 
 To download, visit the [releases](https://github.com/TryGhost/Casper/releases) page.
 

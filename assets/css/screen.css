@@ -1178,6 +1178,30 @@ body:not(.post-template) .post-title {
     text-decoration: none;
 }
 
+.etc {
+  border-top: #EBF2F6 1px solid;
+  margin: 6rem 0 0 0;
+  padding: 6rem 0 0 0;
+  font-size: 1.4rem;
+}
+
+.etc .logo {
+  display: block;
+  margin: 0 auto 3rem auto;
+  height: 40px;
+}
+
+.etc .well {
+  background-color: #EBF2F6;
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.etc .well p {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
 /* Turn off meta for page2+ to make room for extra
    pagination prev/next links */
 .archive-template .author-profile .author-meta {

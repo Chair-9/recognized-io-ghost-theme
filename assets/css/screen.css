@@ -1182,7 +1182,16 @@ body:not(.post-template) .post-title {
   border-top: #EBF2F6 1px solid;
   margin: 6rem 0 0 0;
   padding: 6rem 0 0 0;
-  font-size: 1.4rem;
+  font-size: 1.75rem;
+  text-align: center;
+  /* font-weight: bold; */
+  color: rgba(142, 146, 166, 0.96);
+
+}
+
+.etc  a {
+  color: #0066A3;
+  text-decoration: none;
 }
 
 .etc .logo {
@@ -1192,9 +1201,7 @@ body:not(.post-template) .post-title {
 }
 
 .etc .well {
-  background-color: #EBF2F6;
   padding: 3rem;
-  border-radius: 10px;
 }
 
 .etc .well p {

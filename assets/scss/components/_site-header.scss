@@ -1,0 +1,55 @@
+.global-header{
+  @include header-footer-reset;
+  border-bottom: $base-border;
+
+  .content {
+    @include outer-container;
+    padding: $base-spacing;
+  }
+
+  .logo{
+    display: block;
+    text-align: center;
+  }
+
+  h1 {
+    @include hide-text;
+    @include retina-image("../images/header-logo", 189px 35px);
+    @include size(189px 35px);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .nav {
+    display: none;
+    text-align: center;
+  }
+
+  li{
+    margin: 1em 0;
+  }
+
+  .sign-up-link{
+    @include button;
+  }
+
+  @include media($medium-screen-up){
+    .content {
+      align-items: center;
+      display: flex;
+    }
+
+    .nav {
+      display: block;
+      flex: 1;
+      text-align: right;
+    }
+
+    li {
+      display: inline-block;
+      margin: 0;
+      margin-left: 1em;
+    }
+  }
+}

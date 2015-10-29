@@ -1,4 +1,8 @@
-@import "normalize";
-
 @import "bourbon";
+@import "base/base";
 @import "neat";
+
+@import "mixins/header-footer-reset";
+
+@import "components/site-header";
+@import "components/site-footer";

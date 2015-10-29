@@ -1,0 +1,5 @@
+@mixin header-footer-reset{
+  @include base-buttons;
+  @include base-lists;
+  @include base-typography;
+}

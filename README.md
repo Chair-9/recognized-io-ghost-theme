@@ -10,6 +10,16 @@ Run the following command to keep the scss compiled
 
     $ gulp dev
 
+## Building
+
+To generate the zip to upload to ghost
+
+    $ gulp build
+
+To list the files in the zip
+
+    $ unzip -vl dist/theme.zip
+
 ## Copyright & License
 
 Copyright (c) 2013-2015 Ghost Foundation - Released under the MIT License.

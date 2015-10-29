@@ -5,6 +5,7 @@ var sass = require('gulp-sass');
 var notify = require('gulp-notify');
 var bower = require('gulp-bower');
 var autoprefixer = require('gulp-autoprefixer');
+var zip = require('gulp-zip');
 
 var config = {
   scssDir:  'assets/scss',
@@ -16,7 +17,7 @@ gulp.task('bower', function(){
     .pipe(gulp.dest(config.bowerDir))
 });
 
-gulp.task('sass', function () {
+gulp.task('sass', function() {
   gulp.src(config.scssDir + '/**/*.scss')
     .pipe(
       sass({
@@ -34,8 +35,23 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./assets/css'));
 });
 
-gulp.task('sass:watch', function () {
+gulp.task('sass:watch', function() {
   gulp.watch(config.scssDir + '/**/*.scss', ['sass']);
 });
+
+gulp.task('build:zip', function() {
+  gulp.src([
+      "./**/*",
+      '!Gulpfule.js',
+      '!./assets/scss/**/*',
+      '!./bower_components/**/*',
+      '!./dist/**/*',
+      '!./node_modules/**/*'
+     ])
+    .pipe(zip('theme.zip'))
+    .pipe(gulp.dest("dist"))
+});
+
+gulp.task('build', ['bower', 'sass', 'build:zip']);
 
 gulp.task('dev',['bower', 'sass:watch']);

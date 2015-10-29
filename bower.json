@@ -1,0 +1,23 @@
+{
+  "name": "Recognized.io",
+  "description": "Ghost theme for recognized.io",
+  "main": "",
+  "authors": [
+    "Aaron Renner <aaron@animascodelabs.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/AnimasCodeLabs/recognized-io-ghost-theme",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.6",
+    "neat": "~1.7.2",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}

@@ -4,6 +4,12 @@ Forked from the default casper theme. The default theme for [Ghost](http://githu
 
 To download, visit the [releases](https://github.com/TryGhost/Casper/releases) page.
 
+## Development
+
+Run the following command to keep the scss compiled
+
+    $ gulp dev
+
 ## Copyright & License
 
 Copyright (c) 2013-2015 Ghost Foundation - Released under the MIT License.

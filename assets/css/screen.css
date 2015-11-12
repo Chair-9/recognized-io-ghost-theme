@@ -1178,37 +1178,6 @@ body:not(.post-template) .post-title {
     text-decoration: none;
 }
 
-.etc {
-  border-top: #EBF2F6 1px solid;
-  margin: 6rem 0 0 0;
-  padding: 6rem 0 0 0;
-  font-size: 1.75rem;
-  text-align: center;
-  /* font-weight: bold; */
-  color: rgba(142, 146, 166, 0.96);
-
-}
-
-.etc  a {
-  color: #0066A3;
-  text-decoration: none;
-}
-
-.etc .logo {
-  display: block;
-  margin: 0 auto 3rem auto;
-  height: 40px;
-}
-
-.etc .well {
-  padding: 3rem;
-}
-
-.etc .well p {
-  font-style: italic;
-  margin-bottom: 0;
-}
-
 /* Turn off meta for page2+ to make room for extra
    pagination prev/next links */
 .archive-template .author-profile .author-meta {
